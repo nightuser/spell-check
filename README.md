@@ -26,4 +26,4 @@ for the _Spell Check_ package. Here are some examples: `source.coffee`,
 
 ## Changing the dictionary
 
-Currently, only the English (US) dictionary is supported. Follow [this issue](https://github.com/atom/spell-check/issues/11) for updates.
+Set dictionary list and path in package's settings. Dictionaries can be downloaded from [LibreOffice repo](https://cgit.freedesktop.org/libreoffice/dictionaries/tree/). Note that they have to be in UTF-8 encoding.
