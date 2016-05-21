@@ -1,8 +1,10 @@
 SpellChecker = require 'spellchecker'
 
-module.exports = ({id, text}) ->
+module.exports = ({id, text, dicts, dictsDir}) ->
   SpellChecker.add("GitHub")
   SpellChecker.add("github")
+  for dict in dicts
+    SpellChecker.addDictionary(dict, dictsDir)
 
   misspelledCharacterRanges = SpellChecker.checkSpelling(text)
 

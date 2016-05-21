@@ -5,7 +5,7 @@
   "description": "Highlights misspelled words and shows possible corrections.",
   "dependencies": {
     "atom-space-pen-views": "^2.0.0",
-    "spellchecker": "3.2.3",
+    "spellchecker": "https://github.com/nightuser/node-spellchecker",
     "underscore-plus": "^1"
   },
   "repository": "https://github.com/atom/spell-check",
@@ -24,6 +24,19 @@
         "text.plain.null-grammar"
       ],
       "description": "List of scopes for languages which will be checked for misspellings. See [the README](https://github.com/atom/spell-check#spell-check-package-) for more information on finding the correct scope for a specific language."
+    },
+    "dicts": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "description": "Comma-separated dictionary names."
+    },
+    "dictsDir": {
+      "type": "string",
+      "default": "",
+      "description": "Path to dictionaries."
     }
   },
   "devDependencies": {
